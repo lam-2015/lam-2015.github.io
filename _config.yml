@@ -2,6 +2,6 @@ name: Linguaggi e Ambienti Multimediali (2015)
 markdown: redcarpet
 redcarpet:
   extensions: ["hard_wrap", "no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
-highlighter: true
+pygments: true
 url: http://lam-2015.github.io
 permalink: /:categories/:year/:title.html
