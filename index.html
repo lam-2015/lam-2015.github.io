@@ -40,25 +40,25 @@ In particolare, il corso &egrave; diviso in due moduli: uno rivolto agli aspetti
 				</p>
 			</div>
 		</div>
-<!--
+
 		<div class="row">
 			<div class="col-md-12">
 				<hr />
-				<a id="completed-projects"></a>
+				<a id="projects"></a>
 			</div>
 		</div>
-		{% assign projects = site.categories.completed-projects | sort: 'date'%}
+		{% assign projects = site.categories.projects | sort: 'title'%}
 		{% for post in projects %}
 		{% assign odd = forloop.index0 | modulo:2 %}
 		{%if odd == 0 %}
 		<div class="row featurette">
 			<div class="col-md-7">
 				<h2 class="featurette-heading">
-					{{ post.title }} <span class="text-muted">({{post.team}})</span>
+					{{ post.title }}
 				</h2>
 				<p class="lead">
 					{{ post.content}} <a href="{{post.project_url}}"
-						class="btn btn-default">Read more...</a>
+						class="btn btn-default">Scopri di pi&ugrave;...</a>
 				</p>
 			</div>
 			<div class="col-md-5">
@@ -72,57 +72,15 @@ In particolare, il corso &egrave; diviso in due moduli: uno rivolto agli aspetti
 			</div>
 			<div class="col-md-7">
 				<h2 class="featurette-heading">
-					{{ post.title }} <span class="text-muted">({{post.team}})</span>
+					{{ post.title }}
 				</h2>
 				<p class="lead">
 					{{ post.content}} <a href="{{post.project_url}}"
-						class="btn btn-default">Read more...</a>
+						class="btn btn-default">Scopri di pi&ugrave;...</a>
 				</p>
 			</div>
 		</div>
 		{% endif %}
 		{% endfor %}
-		<div class="row">
-			<div class="col-md-12">
-				<a id="ongoing-projects"></a>
-				<div class="page-header">
-					<h1>Ongoing projects</h1>
-				</div>
-			</div>
-		</div>
-		{% assign projects = site.categories.projects | sort: 'title' %} {%for post in projects %} {% assign odd = forloop.index0 | modulo:2 %}
-		{%if odd == 0 %}
-		<div class="row featurette">
-			<div class="col-md-7">
-				<h2 class="featurette-heading">
-					{{ post.title }} <span class="text-muted">({{post.team}})</span>
-				</h2>
-				<p class="lead">
-					{{ post.content}} <a href="{{post.project_url}}"
-						class="btn btn-default">Read more...</a>
-				</p>
-			</div>
-			<div class="col-md-5">
-				<a href="{{post.project_url}}"><img src="{{post.image}}" /></a>
-			</div>
-		</div>
-		{% else %}
-		<div class="row featurette">
-			<div class="col-md-5">
-				<a href="{{post.project_url}}"><img src="{{post.image}}" /></a>
-			</div>
-			<div class="col-md-7">
-				<h2 class="featurette-heading">
-					{{ post.title }} <span class="text-muted">({{post.team}})</span>
-				</h2>
-				<p class="lead">
-					{{ post.content}} <a href="{{post.project_url}}"
-						class="btn btn-default">Read more...</a>
-				</p>
-			</div>
-		</div>
-		{% endif %} {% endfor %}
 
-	</div>
--->
 </div>
